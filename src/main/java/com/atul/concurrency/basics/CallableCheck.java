@@ -36,10 +36,10 @@ public class CallableCheck {
 		System.out.println(future1.get());
 		System.out.println(future2.get());
 
-		int count = 0;
-		while (executor.awaitTermination(1, TimeUnit.SECONDS)) {
-			System.out.println(++count);
-		}
+//		int count = 0;
+//		while (executor.awaitTermination(1, TimeUnit.SECONDS)) {
+//			System.out.println(++count);
+//		}
 
 		executor.shutdown();
 		
